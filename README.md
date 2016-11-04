@@ -31,6 +31,7 @@ end
 ## TODO
 
 - [ ] Tests for all assertions
+- [ ] Docs
 
 
 ## Contributing
