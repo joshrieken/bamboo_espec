@@ -1,4 +1,5 @@
-# Bamboo ESpec
+# WARNING: This repo will no longer be maintained by me, @facto. I have moved entirely away from espec in favor of exunit. If you are interested in maintaining this, let me know and I will transfer control to you.
+
 
 Provides assertions for testing [Bamboo](https://github.com/thoughtbot/bamboo) with ESpec.
 
