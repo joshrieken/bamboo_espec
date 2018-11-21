@@ -6,9 +6,9 @@ defmodule BambooEspec.Mixfile do
       app:             :bamboo_espec,
       version:         "0.1.0",
       elixir:          "~> 1.3",
-      build_embedded:  Mix.env == :prod,
-      start_permanent: Mix.env == :prod,
-      elixirc_paths:   elixirc_paths(Mix.env),
+      build_embedded:  Mix.env() == :prod,
+      start_permanent: Mix.env() == :prod,
+      elixirc_paths:   elixirc_paths(Mix.env()),
       deps:            deps(),
       description:     description(),
       package:         package(),
@@ -38,7 +38,7 @@ defmodule BambooEspec.Mixfile do
       maintainers: ["Joshua Rieken"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/facto/bamboo_espec"},
-      files: ~w(mix.exs README.md CHANGELOG.md LICENSE.md lib),
+      files: ~w(mix.exs README.md CHANGELOG.md LICENSE.md lib)
     ]
   end
 

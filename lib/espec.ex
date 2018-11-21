@@ -5,4 +5,3 @@ defmodule Bamboo.ESpec do
     end
   end
 end
-

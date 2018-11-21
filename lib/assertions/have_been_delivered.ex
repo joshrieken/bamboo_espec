@@ -10,19 +10,19 @@ defmodule Bamboo.ESpec.Assertions.HaveBeenDelivered do
 
   defp success_message(email, _value, _result, positive) do
     be = if positive, do: "has been", else: "has not been"
-    "`#{inspect email}` #{be} delivered."
+    "`#{inspect(email)}` #{be} delivered."
   end
 
   defp error_message(email, _value, _result, positive) do
     be = if positive, do: "have been", else: "has not been"
     but = if positive, do: "have not been", else: "it has been"
-    "Expected `#{inspect email}` to #{be} delivered, but #{but}."
+    "Expected `#{inspect(email)}` to #{be} delivered, but #{but}."
   end
 
   defp normalize_for_testing(email) do
     email
-    |> Bamboo.Mailer.normalize_addresses
-    |> Bamboo.TestAdapter.clean_assigns
+    |> Bamboo.Mailer.normalize_addresses()
+    |> Bamboo.TestAdapter.clean_assigns()
   end
 
   defp do_match(email, _value) do
